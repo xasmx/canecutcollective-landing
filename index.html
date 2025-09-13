@@ -1,6 +1,31 @@
-<html>
-<head></head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cane Cut Collective</title>
+  <style>
+    html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .wrap { min-height: 100%; display: grid; place-items: center; background: #0b0b0b; color: #fafafa; }
+    .card { text-align: center; padding: 3rem 2rem; border-radius: 20px; background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); max-width: 640px; }
+    .logo { width: 120px; height: 120px; object-fit: contain; margin-bottom: 1rem; }
+    h1 { margin: 0.2rem 0 0.6rem; font-size: 2rem; }
+    p { opacity: 0.85; line-height: 1.5; }
+    .btn { display: inline-block; margin-top: 1.2rem; padding: 0.9rem 1.3rem; border-radius: 999px; font-weight: 600; text-decoration: none; background: #FFD54D; color: #222; }
+    .btn:hover { filter: brightness(0.95); }
+    small { display:block; margin-top: 1rem; opacity: .6; }
+  </style>
+</head>
 <body>
-<h1>Cane Cut Collective</h1>
+  <main class="wrap">
+    <div class="card">
+      <img class="logo" src="logo.png" alt="Cane Cut Collective logo" />
+      <h1>Cane Cut Collective</h1>
+      <p>A private community for sugarcane spirits enthusiasts. News, tastings, and deep-dive threads—without the noise.</p>
+      <!-- Important: link to your forum's /login so Discourse starts the Discourse ID flow -->
+      <a class="btn" href="https://cane-cut-collective.discourse.group/login?return_to=/latest">Log in</a>
+      <small>Powered by Discourse</small>
+    </div>
+  </main>
 </body>
 </html>
