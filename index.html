@@ -47,7 +47,13 @@
       box-shadow: 0 10px 40px rgba(0,0,0,.35);
     }
 
-    .logo { width: 120px; height: 120px; object-fit: contain; margin-bottom: .8rem; }
+    .logo {
+      width: clamp(240px, 22vw, 400px);
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
     h1 { margin: .25rem 0 .5rem; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; }
     p  { margin: 0 auto 1rem; line-height: 1.55; opacity: .9; max-width: 55ch; }
 
